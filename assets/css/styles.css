@@ -388,7 +388,30 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 4rem;
+}
 
+.about__data{
+  position: relative;
+  text-align: center;
+}
+
+.about__description{
+  margin-bottom: 3rem;
+}
+
+.about__bread{
+  width: 60px;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+}
+
+.about__img{
+  width: 320px;
+  justify-self: center;
+}
 
 /*=============== FAVORITES ===============*/
 

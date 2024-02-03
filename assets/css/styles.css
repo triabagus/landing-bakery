@@ -25,8 +25,8 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -47,7 +47,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
+    --small-font-size: 0.875rem;
   }
 }
 
@@ -78,7 +78,10 @@ button {
   outline: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
@@ -124,7 +127,7 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
-.header{
+.header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -133,7 +136,7 @@ img {
   z-index: var(--z-fixed);
 }
 
-.nav{
+.nav {
   position: relative;
   height: var(--header-height);
   display: flex;
@@ -141,91 +144,91 @@ img {
   align-items: center;
 }
 
-.nav__logo{
+.nav__logo {
   color: var(--first-color);
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
   color: var(--first-color-alt);
 }
 
 .nav__toggle,
-.nav__close{
+.nav__close {
   font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1150px){
-  .nav__menu{
+@media screen and (max-width: 1150px) {
+  .nav__menu {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: hsla(0, 0%, 6%, .2);
+    background-color: hsla(0, 0%, 6%, 0.2);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px); /* For safari*/
     width: 80%;
     height: 100%;
     padding: 6rem 3rem 0;
-    transition: right .4s;
+    transition: right 0.4s;
   }
 }
 
-.nav__list{
+.nav__list {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
 }
 
-.nav__link{
+.nav__link {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.nav__link:hover{
+.nav__link:hover {
   color: var(--first-color);
 }
 
 .nav__close,
 .nav__img-1,
-.nav__img-2{
+.nav__img-2 {
   position: absolute;
 }
 
-.nav__close{
+.nav__close {
   top: 1rem;
   right: 1.5rem;
 }
 
-.nav__img-1{
+.nav__img-1 {
   width: 80px;
   top: 11rem;
-  right: .75rem;
+  right: 0.75rem;
 }
 
-.nav__img-2{
+.nav__img-2 {
   width: 60px;
   top: 28rem;
   left: 6rem;
 }
 
 /* Show menu */
-.show-menu{
+.show-menu {
   right: 0;
 }
 
 /* Add blur header */
-.blur-header::after{
-  content: '';
+.blur-header::after {
+  content: "";
   position: absolute;
   width: 1000%;
   height: 100%;
-  background-color: hsla(0, 0%, 6%, .2);
+  background-color: hsla(0, 0%, 6%, 0.2);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   top: 0;
@@ -235,19 +238,18 @@ img {
 
 /* Active link */
 
-
 /*=============== HOME ===============*/
-.home{
+.home {
   position: relative;
   padding-top: 6.5rem;
 }
 
-.home__container{
+.home__container {
   row-gap: 2rem;
 }
 
 .home__bg,
-.home__shadow{
+.home__shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -256,180 +258,182 @@ img {
   z-index: -1;
 }
 
-.home__bg{
+.home__bg {
   object-fit: cover;
   object-position: center;
 }
 
-.home__shadow{
-  background: linear-gradient(180deg,
-              hsla(0, 0%, 0%, 0) 0%,
-              hsl(0, 0%, 6%) 100%);
+.home__shadow {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsl(0, 0%, 6%) 100%
+  );
 }
 
-.home__data{
+.home__data {
   position: relative;
   text-align: center;
 }
 
-.home__title{
+.home__title {
   font-size: var(--biggest-font-size);
   font-family: var(--second-font);
   margin-bottom: 1.5rem;
 }
 
-.home__bread{
+.home__bread {
   width: 50px;
   position: absolute;
   top: 15rem;
   left: 4rem;
 }
 
-.home__image{
+.home__image {
   max-width: 400px;
   justify-self: center;
 }
 
-.home__img{
+.home__img {
   rotate: 15deg;
 }
 
 .home__footer,
 .home__location,
-.home__social{
+.home__social {
   display: flex;
 }
 
-.home__footer{
+.home__footer {
   justify-content: space-between;
   align-items: center;
 }
 
-.home__location{
+.home__location {
   aling-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
-.home__location i{
+.home__location i {
   font-size: 1.5rem;
   color: var(--first-color);
 }
 
-.home__location span{
+.home__location span {
   color: var(--title-color);
   font-size: var(--small-font-size);
 }
 
-.home__social{
+.home__social {
   column-gap: 1rem;
 }
 
-.home__social a{
+.home__social a {
   color: var(--title-color);
   font-size: 1.5rem;
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.home__social a:hover{
+.home__social a:hover {
   color: var(--first-color);
 }
 
 /*=============== BUTTON ===============*/
-.button{
+.button {
   display: inline-flex;
   background-color: var(--first-color);
   color: var(--black-color);
   font-weight: var(--font-semi-bold);
   padding: 1.125rem 2rem;
-  transition: background-color .4s;
+  transition: background-color 0.4s;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--first-color-alt);
 }
 
 /*=============== NEW ===============*/
-.new__container{
+.new__container {
   padding-top: 1.5rem;
   row-gap: 3.5rem;
 }
 
-.new__content{
+.new__content {
   row-gap: 2rem;
 }
 
-.new__card{
+.new__card {
   display: flex;
   column-gap: 1rem;
-  align-items: center 
+  align-items: center;
 }
 
-.new__img{
+.new__img {
   width: 150px;
 }
 
-.new__title{
+.new__title {
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
   color: var(--first-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.new__description{
+.new__description {
   font-size: var(--small-font-size);
 }
 
-.new__card:nth-child(2) img{
+.new__card:nth-child(2) img {
   order: -1;
 }
 
-.new__button{
+.new__button {
   justify-self: center;
 }
 
 /*=============== ABOUT ===============*/
-.about__container{
+.about__container {
   row-gap: 4rem;
 }
 
-.about__data{
+.about__data {
   position: relative;
   text-align: center;
 }
 
-.about__description{
+.about__description {
   margin-bottom: 3rem;
 }
 
-.about__bread{
+.about__bread {
   width: 60px;
   position: absolute;
   bottom: 1rem;
   right: 0;
 }
 
-.about__img{
+.about__img {
   width: 320px;
   justify-self: center;
 }
 
 /*=============== FAVORITES ===============*/
-.favorite__container{
+.favorite__container {
   padding-top: 3.5rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem 1.5rem;
 }
 
-.favorite__card{
+.favorite__card {
   position: relative;
   background-color: var(--container-color);
-  box-shadow: 0 12px 24px hsla(0, 0%, 0%, .3);
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.3);
   padding: 6.5rem 1rem 1.25rem;
   border: 2px solid transparent;
-  transition: border-color .4s;
+  transition: border-color 0.4s;
 }
 
-.favorite__img{
+.favorite__img {
   width: 120px;
   position: absolute;
   top: -2rem;
@@ -438,24 +442,24 @@ img {
   margin: 0 auto;
 }
 
-.favorite__title{
+.favorite__title {
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
   color: var(--first-color);
 }
 
-.favorite__subtitle{
+.favorite__subtitle {
   display: block;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
-.favorite__price{
+.favorite__price {
   font-size: var(--normal-font-size);
   font-family: var(--second-font);
 }
 
-.favorite__button{
-  padding: .25rem;
+.favorite__button {
+  padding: 0.25rem;
   font-size: 1.25rem;
   position: absolute;
   bottom: 1.2rem;
@@ -463,30 +467,61 @@ img {
   cursor: pointer;
 }
 
-.favorite__card:hover{
+.favorite__card:hover {
   border-color: var(--first-color);
 }
 
 /*=============== VISIT ===============*/
+.visit__container {
+  position: relative;
+  padding-block: 3rem;
+}
 
+.visit__bg,
+.visit__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.visit__bg {
+  object-fit: cover;
+  object-position: center;
+}
+
+.visit__shadow {
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 6%) 0%,
+    hsla(0, 0%, 4%, 0.1) 50%,
+    hsl(0, 0%, 6%) 100%
+  );
+}
+
+.visit__data {
+  text-align: center;
+}
+
+.visit__description {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 3rem;
+}
 
 /*=============== FOOTER ===============*/
 
-
 /*=============== SCROLL BAR ===============*/
-
 
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
